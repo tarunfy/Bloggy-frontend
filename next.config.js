@@ -5,6 +5,7 @@ const nextConfig = {
     API_KEY: process.env.API_KEY,
     BACKEND_BASE_URL: process.env.BACKEND_BASE_URL,
   },
+  distDir: "build",
   images: {
     domains: ["res.cloudinary.com"],
   },
