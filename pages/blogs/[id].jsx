@@ -49,10 +49,6 @@ const Details = ({ blog, userData }) => {
   };
 
   useEffect(() => {
-    async function updateLikes() {}
-  });
-
-  useEffect(() => {
     async function getComments() {
       const res = await fetch(`/api/blogs/comments/${router.query.id}`);
       const { comments } = await res.json();
@@ -60,7 +56,7 @@ const Details = ({ blog, userData }) => {
       setComments(comments);
     }
     getComments();
-  }, []);
+  }, [router.query.id]);
 
   return (
     <div className="grid grid-cols-3 gap-x-4 max-w-[1200px] mx-auto mt-20 mb-3">

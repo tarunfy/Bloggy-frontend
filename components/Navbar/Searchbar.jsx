@@ -42,15 +42,12 @@ const Searchbar = () => {
       {router.asPath == "/" && (
         <div className="flex items-center space-x-2">
           <InputGroup>
-            <InputRightElement
-              children={
-                <SearchIcon
-                  onClick={handleSearch}
-                  color={`${colorMode === "light" ? "gray.700" : "gray.100"}`}
-                />
-              }
-              className="!cursor-pointer !text-xl"
-            />
+            <InputRightElement className="!cursor-pointer !text-xl">
+              <SearchIcon
+                onClick={handleSearch}
+                color={`${colorMode === "light" ? "gray.700" : "gray.100"}`}
+              />
+            </InputRightElement>
             <Input
               value={searchBarText}
               onChange={(e) => setSearchBarText(e.target.value)}

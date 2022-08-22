@@ -25,8 +25,8 @@ const CancelModal = () => {
           <ModalHeader>You have unsaved changes</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            You've made changes to your post. Do you want to navigate to leave
-            this page?
+            You&apos;ve made changes to your post. Do you want to navigate to
+            leave this page?
           </ModalBody>
           <ModalFooter>
             <Link href="/">

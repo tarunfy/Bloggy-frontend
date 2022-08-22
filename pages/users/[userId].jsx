@@ -72,7 +72,11 @@ const Profile = ({ userData }) => {
             {userData.websiteUrl && (
               <div className="flex items-center space-x-2">
                 <BsGlobe />
-                <a href={`${userData.websiteUrl}`} target="_blank">
+                <a
+                  rel="noreferrer"
+                  href={`${userData.websiteUrl}`}
+                  target="_blank"
+                >
                   {userData.websiteUrl}
                 </a>
               </div>
@@ -81,6 +85,7 @@ const Profile = ({ userData }) => {
             {userData.github && (
               <div className="flex items-center text-xl">
                 <a
+                  rel="noreferrer"
                   href={`https://github.com/${userData.github}`}
                   target="_blank"
                 >
@@ -91,6 +96,7 @@ const Profile = ({ userData }) => {
             {userData.twitter && (
               <div className="flex items-center text-xl">
                 <a
+                  rel="noreferrer"
                   href={`https://github.com/${userData.twitter}`}
                   target="_blank"
                 >

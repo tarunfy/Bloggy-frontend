@@ -75,7 +75,12 @@ const Login = () => {
           <div className="flex items-center mb-5 justify-center">
             <Link href="/">
               <a>
-                <Image src="/images/BloggyText.svg" height={100} width={400} />
+                <Image
+                  alt=""
+                  src="/images/BloggyText.svg"
+                  height={100}
+                  width={400}
+                />
               </a>
             </Link>
           </div>
@@ -106,7 +111,7 @@ const Login = () => {
             Log in
           </Button>
           <p className="text-center">
-            Don't have an account?{" "}
+            Don't have an account?&nbsp;
             <span className="font-medium text-[#5d2ee0]">
               <Link href="/signup">Sign up</Link>
             </span>

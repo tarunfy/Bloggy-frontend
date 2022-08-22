@@ -1,7 +1,8 @@
 @charset "UTF-8";
+
 .custommdLight html {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .custommdLight body {
@@ -33,7 +34,7 @@
 .custommdLight hr {
   border: 1px inset;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0.5em auto;
 }
 
