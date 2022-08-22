@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root[data-theme="light"],
+[data-theme][data-theme="light"] {
+  --chakra-colors-chakra-body-bg: rgba(216, 218, 219, 0.5) !important;
+}
+:root[data-theme="light"],
+[data-theme][data-theme="light"] {
+  --chakra-colors-chakra-body-text: var(--chakra-colors-gray-900) !important;
+  --chakra-colors-chakra-body-bg: var(--chakra-colors-white);
+  --chakra-colors-chakra-border-color: var(--chakra-colors-gray-900) !important;
+  --chakra-colors-chakra-placeholder-color: var(--chakra-colors-gray-500);
+}
+
+.css-198vi0w,
+.css-ou4cdk {
+  border-color: var(--chakra-colors-gray-300) !important;
+}
+
+body {
+  font-family: "Open Sans" !important;
+  background-color: var(--chakra-colors-chakra-body-bg) !important;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0%;
+}
