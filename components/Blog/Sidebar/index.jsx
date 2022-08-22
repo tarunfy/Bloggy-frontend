@@ -11,8 +11,15 @@ const Sidebar = () => {
 
   useEffect(() => {
     async function getNews() {
+      //lang: 'en', sort_by: 'relevancy', page: '1', media: 'True'
       const res = await fetch(
-        `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${process.env.API_KEY}`
+        `https://newscatcher.p.rapidapi.com/v1/search_enterprise?q=Coding&sort_by=relevancy&lang=en&page=1&media=True`,
+        {
+          headers: {
+            "X-RapidAPI-Key": process.env.API_KEY,
+            "X-RapidAPI-Host": "newscatcher.p.rapidapi.com",
+          },
+        }
       );
 
       const data = await res.json();

@@ -6,10 +6,10 @@ const Card = ({ article }) => {
   const { colorMode } = useColorMode();
   return (
     <>
-      <Link href={article.url}>
+      <Link href={article.link}>
         <li className="px-2 py-4 group cursor-pointer">
           <img
-            src={article?.urlToImage}
+            src={article?.media}
             alt="img"
             className="w-full h-40 object-cover mb-2 rounded-md"
           />
