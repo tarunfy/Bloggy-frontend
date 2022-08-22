@@ -5,7 +5,6 @@ import Link from "next/link";
 import moment from "moment";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-//import Image from "next/image";
 
 const Blog = ({ blog, index }) => {
   const [createdBy, setCreatedBy] = useState(null);
