@@ -111,7 +111,7 @@ const Login = () => {
             Log in
           </Button>
           <p className="text-center">
-            Don't have an account?&nbsp;
+            Don&apos;t have an account?&nbsp;
             <span className="font-medium text-[#5d2ee0]">
               <Link href="/signup">Sign up</Link>
             </span>
