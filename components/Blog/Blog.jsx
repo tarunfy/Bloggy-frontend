@@ -18,6 +18,8 @@ const Blog = ({ blog, index }) => {
 
       if (res.ok) {
         setCreatedBy(data.user);
+        console.log(createdBy);
+        console.log(blog);
       } else {
         return;
       }

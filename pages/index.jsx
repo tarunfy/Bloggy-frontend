@@ -72,7 +72,7 @@ export default function Home() {
               {blogs.length > 0 ? (
                 <>
                   {blogs.map((blog, index) => (
-                    <Blog blog={blog} key={blog._id} index={index} />
+                    <Blog blog={blog} key={index} index={index} />
                   ))}
                 </>
               ) : (

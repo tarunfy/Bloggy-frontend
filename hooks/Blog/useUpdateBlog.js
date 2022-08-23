@@ -1,10 +1,7 @@
 import { useState } from "react";
-import { useBlogContext } from "./useBlogContext";
 
 export const useUpdateBlog = () => {
   const [isLoading, setIsLoading] = useState(false);
-
-  const { dispatch } = useBlogContext();
 
   const updateBlog = async (blogId, blogData) => {
     let error;
@@ -27,8 +24,6 @@ export const useUpdateBlog = () => {
     }
 
     if (res.ok) {
-      dispatch({ type: "UPDATE", payload: data.updatedBlog });
-
       setIsLoading(false);
     }
   };
