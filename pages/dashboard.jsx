@@ -53,12 +53,15 @@ export default Dashboard;
 export const getServerSideProps = async (context) => {
   const { jwt } = context.req.cookies;
 
-  const res = await fetch("http://localhost:4000/api/blogs/user/personal", {
-    headers: {
-      authorization: `Bearer ${jwt}`,
-    },
-    credentials: "include",
-  });
+  const res = await fetch(
+    `${process.env.BACKEND_BASE_URL}/api/blogs/user/personal`,
+    {
+      headers: {
+        authorization: `Bearer ${jwt}`,
+      },
+      credentials: "include",
+    }
+  );
 
   const data = await res.json();
 

@@ -142,7 +142,7 @@ export default Profile;
 export const getServerSideProps = async (context) => {
   const userId = context.params.userId;
 
-  const res = await fetch(`http://localhost:4000/api/user/${userId}`);
+  const res = await fetch(`${process.env.BACKEND_BASE_URL}/api/user/${userId}`);
 
   const data = await res.json();
 

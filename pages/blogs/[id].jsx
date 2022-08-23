@@ -165,12 +165,12 @@ export default Details;
 export const getServerSideProps = async (context) => {
   const { id } = context.params;
 
-  const res = await fetch(`http://localhost:4000/api/blogs/${id}`);
+  const res = await fetch(`${process.env.BACKEND_BASE_URL}/api/blogs/${id}`);
 
   const data = await res.json();
 
   const res2 = await fetch(
-    `http://localhost:4000/api/user/${data.blog.userId}`
+    `${process.env.BACKEND_BASE_URL}/api/user/${data.blog.userId}`
   );
 
   const { user } = await res2.json();

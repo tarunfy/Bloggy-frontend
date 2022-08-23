@@ -1,5 +1,4 @@
 import { useColorMode } from "@chakra-ui/react";
-import Link from "next/link";
 import { useEffect } from "react";
 import { useState } from "react";
 import NewsCardSkeleton from "../../../skeletons/NewsCardSkeleton";
